@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html lang="PT-BR">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="style.css" />
+	<title>Calculadora</title>
+	<script src="script.js" defer></script>
+</head>
+<body>
+	<main>
+		<header><h1>Calculadora</h1></header>
+		<div id="container">
+			<div id="top">
+				<h2>Gabio</h2>
+				<input type="text" value="0" disabled />
+			</div>
+			<div id="numpad"></div>
+		</div>
+		<div id="history">
+			<h3>Histórico</h3>
+			<textarea cols="26" rows="2"></textarea>
+			<button onclick="document.querySelector('textarea').value = ''">Limpar</button>
+		</div>
+	</main>
+	<footer>
+		<div>Desenvolvido por <a href="https://github.com/gfsgomes">Gabriel Gomes</a></div>
+		<div>2023 - Licensa MIT</div>
+	</footer>
+</body>
+</html>
